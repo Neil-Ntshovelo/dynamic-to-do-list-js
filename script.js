@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
 
     const addButton = document.getElementById("add-task-btn");
     const taskInput = document.getElementById("task-input");
@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function(){
         // Create a remove button
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
-        removeButton.className = 'remove-btn';
+
+        // Add class using classList.add instead of assigning className
+        removeButton.classList.add('remove-btn');
 
         // Add click event to remove the task
         removeButton.onclick = function() {
